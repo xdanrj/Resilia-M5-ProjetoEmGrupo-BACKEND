@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.21",
+    "nodemon": "^2.0.21"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "bdon": "node ./src/infra/bdconnect.js",
+    "bdoff": "node ./src/infra/bddisconnect.js",
+    "tabeladatabase": "node ./src/infra/databaseCreateAndPopulate.js"
+  }
+}

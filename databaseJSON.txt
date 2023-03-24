@@ -1,0 +1,111 @@
+FILIAIS:
+
+{
+    "id": 1,
+    "nome": "Z Tech RJ",
+    "local": "Rio de Janeiro - RJ",
+    "cnpj": "22.312.432/0005-47"
+},
+{
+    "id": 2,
+    "nome": "Z Tech SP",
+    "local": "São Paulo - SP",
+    "cnpj": "13.435.654/0002-33"
+},
+{
+    "id": 3,
+    "nome": "Z Tech MG",
+    "local": "Belo Horizonte - MG",
+    "cnpj": "43.887.674/0003-12"
+},
+{
+    "id": 4,
+    "nome": "Z Tech RS",
+    "local": "Porto Alegre - RS",
+    "cnpj": "76.721.113/0001-83"
+},
+{
+    "id": 5,
+    "nome": "Z Tech DF",
+    "local": "Brasília - DF",
+    "cnpj": "12.552.324/0009-51"
+}
+
+
+VENDEDORES:
+
+ {
+    "id": 1,
+    "nome": "João Silva",
+    "email": "joaosilva@ztech.com",
+    "cpf": 12345678901,
+    "metas": 3000
+},
+{
+    "id": 2,
+    "nome": "Maria Helena",
+    "email": "mariahelena@ztech.com",
+    "cpf": 98765432101,
+    "metas": 3000
+},
+{
+    "id": 3,
+    "nome": "Pedro Souza",
+    "email": "pedrosouza@ztech.com",
+    "cpf": 45678912301,
+    "metas": 3000
+},
+{
+    "id": 4,
+    "nome": "Caroline Santos",
+    "email": "carolinesantos@ztech.com",
+    "cpf": 36921478021,
+    "metas": 3000
+},
+{
+    "id": 5,
+    "nome": "Patricia Lemos",
+    "email": "patricialemos@ztech.com",
+    "cpf": 78901269740,
+    "metas": 3000
+},
+{
+    "id": 6,
+    "nome": "Yuri Rocha",
+    "email": "yurirocha@ztech.com",
+    "cpf": 15401237895,
+    "metas": 3000
+}
+
+PRODUTOS:
+
+{
+    "id": 1,
+    "nome": "Samsung Galaxy A34",
+    "cor": "Violeta",
+    "preco": 2317
+},
+{
+    "id": 2,
+    "nome": "JBL Go 3",
+    "cor": "Preto",
+    "preco": 240
+},
+{
+    "id": 3,
+    "nome": "Philco Fone",
+    "cor": "Azul",
+    "preco": 95
+},
+{
+    "id": 4,
+    "nome": "Canon Camera",
+    "cor": "Preto",
+    "preco": 968
+},
+{
+    "id": 5,
+    "nome": "Xbox Videogame",
+    "cor": "Branco",
+    "preco": 1530
+}
