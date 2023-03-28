@@ -1,50 +1,37 @@
-import bd from "../infra/bd.js";
+const validarEmail = (email) => {
+  const emailValido = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailValido.test(email);
+}
+
+const validarCPF = (cpf) => {
+  const cpfValido = /^(?:(?!000\.?000\.?000-?00|111\.?111\.?111-?11|222\.?222\.?222-?22|333\.?333\.?333-?33|444\.?444\.?444-?44|555\.?555\.?555-?55|666\.?666\.?666-?66|777\.?777\.?777-?77|888\.?888\.?888-?88|999\.?999\.?999-?99)[0-9]{3}\.?)[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}$/;
+  return cpfValido.test(cpf);
+
+}
 
 const vendedoresModel = {
   modelar: (obj) => {
+    if ( !validarEmail(obj.email)  ){
+      throw {
+      dados: "Email inválido! Digite com '@' e '.com'",
+      status: 400
+      }
+  }
+    if ( !validarCPF(obj.cpf) ){
+      throw {
+      dados: "CPF inválido! Digite no formato 'XXX.XXX.XXX-XX'",
+      status: 400
+      }
+    }
     return {
       id: obj.id,
       nome: obj.nome, 
       email: obj.email,
       cpf: obj.cpf,
-      metas: obj.metas
+      meta: obj.meta
     };
   },
-  /*
-  armazenar: (obj) => {
-    const modelado = vendedoresModel.modelar(obj);
-    bd.usuarios.push(modelado);
-    return {
-      dados: { msg: "Vendedor criado com sucesso" },
-      status: 201,
-    };
-  },
-  mostrarTodos: () => {
-    return {
-      dados: { msg: bd.usuarios },
-      status: 200,
-    };
-  },
-  mostrarUm: (param) => {
-    const data = bd.usuarios.find((usuario) => usuario.email === param);
-    return {
-      dados: {
-        msg: data,
-      },
-      status: 200,
-    };
-  },
-  deletar: (param) => {
-    const data = bd.usuarios.find(usuario => usuario.email === param)
-    const index = bd.usuarios.indexOf(data)
-    bd.usuarios.splice(index, 1)
-    return {
-      dados: {
-        msg: `Vendedor com parâmetro: ${param} deletado com sucesso`,
-      },
-      status: 200,
-    };
-  }, */
+  
 };
 
 export default vendedoresModel;

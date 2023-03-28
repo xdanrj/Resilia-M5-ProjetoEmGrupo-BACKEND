@@ -8,8 +8,9 @@ class vendedoresDAO {
       status: 200,
     };
   }
-  static async mostrarUm(param) {
-    const dadosbd = await database.query(`SELECT * FROM vendedores WHERE id = ?`, param);
+  // ESSE TA FUNCIONANDO \/
+  static async mostrarUm(atributo, valor) {
+    const dadosbd = await database.query(`SELECT * FROM vendedores WHERE ${atributo} = ?`, valor);
     return {
       dados: { msg: dadosbd },
       status: 200,
@@ -17,7 +18,7 @@ class vendedoresDAO {
   }
   static async inserir(obj) {
     try {
-      await database.query("INSERT INTO vendedores (id, nome, email, cpf, metas) VALUES (?,?,?,?,?)", Object.values(obj));
+      await database.query("INSERT INTO vendedores (id, nome, email, cpf, meta) VALUES (?,?,?,?,?)", Object.values(obj));
     } catch (error) {
       return {
         dados: { msg: "MySql error", error: error.code },
@@ -32,12 +33,12 @@ class vendedoresDAO {
 
   static async atualizar(id, obj) {
     try {
-      await database.query("UPDATE vendedores SET id = ?, nome = ?, email = ?, cpf = ?, metas = ? WHERE id = ?", [
+      await database.query("UPDATE vendedores SET id = ?, nome = ?, email = ?, cpf = ?, meta = ? WHERE id = ?", [
       obj.id,
       obj.nome, 
       obj.email,
       obj.cpf,
-      obj.metas,
+      obj.meta,
       id,
       ]);
     } catch (error) {

@@ -6,19 +6,31 @@ const clientesController = (app) => {
     const resposta = await clientesDAO.mostrarTodos();
     res.status(resposta.status).send(resposta.dados);
   });
+
+
   app.get("/clientes/id/:id", async (req, res) => {
     const resposta = await clientesDAO.mostrarUm(req.params.id);
     res.status(resposta.status).send(resposta.dados);
   });
+
+
   app.post("/clientes", async (req, res) => {
+    try {
     const modelado = clientesModel.modelar(req.body)
     const resposta = await clientesDAO.inserir(modelado)
-    res.status(resposta.status).send(resposta.dados);
+    res.status(resposta.status).send(resposta.dados)
+    } catch (error) {
+      res.status(400).send({ mensagem: error.message})
+    }
   });
+
+
   app.delete("/clientes/id/:id", async(req, res) => {
     const resposta = clientesDAO.deletar(req.params.id)
     res.status(resposta.status).send(resposta.dados)
   });
+
+
   app.put("/clientes/id/:id", async(req, res) => {
     const resposta = await clientesDAO.atualizar(req.params.id)
     res.status(resposta.status).send(resposta.dados)

@@ -14,6 +14,6 @@
     "dev": "nodemon ./src/server.js",
     "bdon": "node ./src/infra/bdconnect.js",
     "bdoff": "node ./src/infra/bddisconnect.js",
-    "tabeladatabase": "node ./src/infra/databaseCreateAndPopulate.js"
+    "database": "node ./src/infra/databaseCreateAndPopulate.js"
   }
 }

@@ -8,8 +8,8 @@ class filiaisDAO {
       status: 200,
     };
   }
-  static async mostrarUm(param) {
-    const dadosbd = await database.query(`SELECT * FROM filiais WHERE id = ?`, param);
+  static async mostrarUm(parametroUm, parametroDois) {
+    const dadosbd = await database.query(`SELECT * FROM filiais WHERE ${parametroUm} = ${parametroDois}`, parametroUm, parametroDois);
     return {
       dados: { msg: dadosbd },
       status: 200,
