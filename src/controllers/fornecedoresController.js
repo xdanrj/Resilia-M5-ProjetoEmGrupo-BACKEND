@@ -7,13 +7,6 @@ const fornecedoresController = (app) => {
     res.status(resposta.status).send(resposta.dados);
   });
 
-
-  app.get("/fornecedores/id/:id", async (req, res) => {
-    const resposta = await fornecedoresDAO.mostrarUm(req.params.id);
-    res.status(resposta.status).send(resposta.dados);
-  });
-
-
   app.post("/fornecedores", async (req, res) => {
     try{
     const modelado = fornecedoresModel.modelar(req.body)
@@ -26,15 +19,27 @@ const fornecedoresController = (app) => {
   });
 
 
-  app.delete("/fornecedores/id/:id", async(req, res) => {
-    const resposta = fornecedoresDAO.deletar(req.params.id)
+  // td feito (dao, controller)
+  app.get("/fornecedores/:atributo/:valor", async (req, res) => {
+    const resposta = await fornecedoresDAO.mostrarUm(req.params.atributo, req.params.valor);
+    res.status(resposta.status).send(resposta.dados);
+  });
+
+// td feito
+  app.delete("/fornecedores/:atributo/:valor", async(req, res) => {
+    const resposta = await fornecedoresDAO.deletar(req.params.atributo, req.params.valor)
     res.status(resposta.status).send(resposta.dados)
   });
 
-  
-  app.put("/fornecedores/id/:id", async(req, res) => {
-    const resposta = await fornecedoresDAO.atualizar(req.params.id)
-    res.status(resposta.status).send(resposta.dados)
+  app.put("/fornecedores/:atributo/:valor", async (req, res) => {
+    try {
+      const modelado = fornecedoresModel.modelar(req.body)
+      const resposta = await fornecedoresDAO.atualizar(req.params.atributo, req.params.valor, modelado)
+      res.status(resposta.status).send(resposta.dados);
+    } catch (error) {
+      res.status(error.status).send(error.dados);
+      console.log(error.dados)
+    }
   });
 };
 

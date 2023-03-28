@@ -8,8 +8,8 @@ class clientesDAO {
       status: 200,
     };
   }
-  static async mostrarUm(param) {
-    const dadosbd = await database.query(`SELECT * FROM clientes WHERE id = ?`, param);
+  static async mostrarUm(atributo, valor) {
+    const dadosbd = await database.query(`SELECT * FROM clientes WHERE ${atributo} = ?`, valor);
     return {
       dados: { msg: dadosbd },
       status: 200,
@@ -30,13 +30,15 @@ class clientesDAO {
     };
   }
 
-  static async atualizar(id, obj) {
+  static async atualizar(atributo, valor, obj) {
     try {
-      await database.query("UPDATE clientes SET idusuarios = ?, nome = ?, email = ? WHERE id = ?", [
-        obj.idusuarios,
+      await database.query(`UPDATE clientes SET idusuarios = ?, nome = ?, email = ? WHERE ${atributo} = ?`, [
+        obj.id,
         obj.nome,
         obj.email,
-        id,
+        obj.cpf,
+        obj.cep,
+        valor
       ]);
     } catch (error) {
       return {

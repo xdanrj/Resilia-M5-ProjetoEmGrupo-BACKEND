@@ -1,147 +1,186 @@
-FILIAIS:
-
-{
+FILIAIS: {
     "id": 1,
-    "nome": "Z Tech RJ",
-    "local": "Rio de Janeiro - RJ",
-    "cnpj": "22.312.432/0005-47"
+        "nome": "Z Tech RJ",
+            "local": "Rua São José, Centro, n 32, Rio de Janeiro, RJ",
+                "cnpj": "22.312.432/0005-47"
 },
 {
     "id": 2,
-    "nome": "Z Tech SP",
-    "local": "São Paulo - SP",
-    "cnpj": "13.435.654/0002-33"
+        "nome": "Z Tech SP",
+            "local": "Rua Conde de Sarzedas, n 134, Liberdade, São Paulo, SP",
+                "cnpj": "13.435.654/0002-33"
 },
 {
     "id": 3,
-    "nome": "Z Tech MG",
-    "local": "Belo Horizonte - MG",
-    "cnpj": "43.887.674/0003-12"
+        "nome": "Z Tech MG",
+            "local": "Rua Dr. Plínio de Morais, n 542, Cidade Nova, Belo Horizonte, MG",
+                "cnpj": "43.887.674/0003-12"
 },
 {
     "id": 4,
-    "nome": "Z Tech RS",
-    "local": "Porto Alegre - RS",
-    "cnpj": "76.721.113/0001-83"
+        "nome": "Z Tech RS",
+            "local": "Rua Prof. Sarmento Barata, n 277, Navegantes, Porto Alegre, RS",
+                "cnpj": "76.721.113/0001-83"
 },
 {
     "id": 5,
-    "nome": "Z Tech DF",
-    "local": "Brasília - DF",
-    "cnpj": "12.552.324/0009-51"
+        "nome": "Z Tech DF",
+            "local": "Asa Sul Superquadra Sul n 215 BL K, Asa Sul, Brasília, DF",
+                "cnpj": "12.552.324/0009-51"
 }
 
 
-VENDEDORES:
-
- {
+VENDEDORES: {
     "id": 1,
-    "nome": "João Silva",
-    "email": "joaosilva@ztech.com",
-    "cpf": 12345678901,
-    "metas": 3000
+        "nome": "João Silva",
+            "email": "joaosilva@ztech.com",
+                "cpf": "123.456.789-01",
+                    "meta": 30000
 },
 {
     "id": 2,
-    "nome": "Maria Helena",
-    "email": "mariahelena@ztech.com",
-    "cpf": 98765432101,
-    "metas": 3000
+        "nome": "Maria Helena",
+            "email": "mariahelena@ztech.com",
+                "cpf": "987.654.321-01",
+                    "meta": 50000
 },
 {
     "id": 3,
-    "nome": "Pedro Souza",
-    "email": "pedrosouza@ztech.com",
-    "cpf": 45678912301,
-    "metas": 3000
+        "nome": "Pedro Souza",
+            "email": "pedrosouza@ztech.com",
+                "cpf": "456.789.123-01",
+                    "meta": 45000
 },
 {
     "id": 4,
-    "nome": "Caroline Santos",
-    "email": "carolinesantos@ztech.com",
-    "cpf": 36921478021,
-    "metas": 3000
+        "nome": "Caroline Santos",
+            "email": "carolinesantos@ztech.com",
+                "cpf": "369.214.780-21",
+                    "meta": 20000
 },
 {
     "id": 5,
-    "nome": "Patricia Lemos",
-    "email": "patricialemos@ztech.com",
-    "cpf": 78901269740,
-    "metas": 3000
+        "nome": "Patricia Lemos",
+            "email": "patricialemos@ztech.com",
+                "cpf": "789.012.697-40",
+                    "meta": 47000
 },
 {
     "id": 6,
-    "nome": "Yuri Rocha",
-    "email": "yurirocha@ztech.com",
-    "cpf": 15401237895,
-    "metas": 3000
+        "nome": "Yuri Rocha",
+            "email": "yurirocha@ztech.com",
+                "cpf": "154.012.378-95",
+                    "meta": 3000
 }
 
-PRODUTOS:
 
-{
+PRODUTOS: {
     "id": 1,
-    "nome": "Samsung Galaxy A34",
-    "cor": "Violeta",
-    "preco": 2317
+        "nome": "Samsung Galaxy A34",
+            "cor": "Violeta",
+                "preco": 2317
 },
 {
     "id": 2,
-    "nome": "JBL Go 3",
-    "cor": "Preto",
-    "preco": 240
+        "nome": "JBL Go 3",
+            "cor": "Preto",
+                "preco": 240
 },
 {
     "id": 3,
-    "nome": "Philco Fone",
-    "cor": "Azul",
-    "preco": 95
+        "nome": "Philco Fone",
+            "cor": "Azul",
+                "preco": 95
 },
 {
     "id": 4,
-    "nome": "Canon Camera",
-    "cor": "Preto",
-    "preco": 968
+        "nome": "Canon Camera",
+            "cor": "Preto",
+                "preco": 968
 },
 {
     "id": 5,
-    "nome": "Xbox Videogame",
-    "cor": "Branco",
-    "preco": 1530
+        "nome": "Xbox Videogame",
+            "cor": "Branco",
+                "preco": 1530
 }
 
-FORNECEDORES:
-        {
-            "
-        {
-            "id": 1,
-            "nome": "Atacadista Eletronico",
-            "endereco": "Rua Mário Quintana, número 18, Ouro preto, Minas Gerais,",
-            "cnpj": 11223344556745
-        },
-        {
-            "id": 2,
-            "nome": "Fábrica Techy",
-            "endereco": "Rua Uruguaiana, número 969, Centro, Rio de Janeiro, RJ",
-            "cnpj": 11223344556887
-        },
-        {
-            "id": 3,
-            "nome": "Mirante games",
-            "endereco": "Avenida Nossa senhora de Copacabana, número 68, Copacabana, Rio de Janeiro, RJ",
-            "cnpj": 11223344556954
-        },
-        {
-            "id": 4,
-            "nome": "T. Eletron",
-            "endereco": "Rua 25 de março, número 12, centro, São Paulo, SP",
-            "cnpj": 11223344556032
-        },
-        {
-            "id": 5,
-            "nome": "Start T.",
-            "endereco": "Avenida Principal, número 630, Tres Figueiras, Porto Alegre, RS",
-            "cnpj": 11223344556509
-        }
- 
- 
+
+CLIENTES: {
+    "id": 1,
+        "nome": "Pedro Andrade Mariano",
+            "Email": "andrade@yahoo.com",
+                "cpf": "196.164.129-96",
+                    "cep": "23842-283"
+},
+{
+    "id": 2,
+        "nome": "Maylah Fonseca da Silva",
+            "email": "maylah@gmail.com",
+                "cpf": "183.182.173-45",
+                    "cep: "28137-282"
+},
+{
+    "id": 3,
+        "nome": "Myllany Hollanda Pereira",
+            "email": "hollanda.rj@gmail.com",
+                "cpf": "124.183.186-69",
+                    "cep": "28429-293"
+},
+{
+    "id": 4,
+        "nome": "Michel Castanheira pinto",
+            "email": "castanha@gmail.com",
+                "cpf": "134.134.142-70",
+                    "cep": "18328-382"
+},
+{
+    "id": 5,
+        "nome": "Hugo dos Santos Alves",
+            "email": "Hugu@gmail.com",
+                "cpf": "189.148.197-95",
+                    "cep": "48218-293"
+},
+{
+    "id": 6,
+        "nome": "Hevelyn Costa Golfinho",
+            "email": "Hevelynrow@gmail.com",
+                "cpf": "189.138.196-95",
+                    "cep": "49229-392"
+}
+
+
+{
+    "FORNECEDORES": [
+      {
+        "id": 1,
+        "nome": "Atacadista Eletrônico",
+        "endereco": "Rua Mário Quintana, n 18, Ouro Preto, Minas Gerais, MG",
+        "cnpj": "15.223.344/5567-45"
+      },
+      {
+        "id": 2,
+        "nome": "Fábrica Tech",
+        "endereco": "Rua Uruguaiana n 969, Centro, Rio de Janeiro, RJ",
+        "cnpj": "44.223.387/6568-87"
+      },
+      {
+        "id": 3,
+        "nome": "Mirante Games",
+        "endereco": "Avenida Nossa Senhora de Copacabana, n 68, Copacabana, Rio de Janeiro, RJ",
+        "cnpj": "21.223.788/3569-54"
+      },
+      {
+        "id": 4,
+        "nome": "T. Eletron",
+        "endereco": "Rua 25 de Março, n 12, Centro, São Paulo, SP",
+        "cnpj": "31.256.341/1560-52"
+      },
+      {
+        "id": 5,
+        "nome": "Start T.",
+        "endereco": "Avenida Principal, n 630, Três Figueiras, Porto Alegre, RS",
+        "cnpj": "11.623.374/4565-09"
+      }
+    ]
+  }

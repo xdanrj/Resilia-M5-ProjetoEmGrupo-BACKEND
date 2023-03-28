@@ -7,18 +7,6 @@ const filiaisController = (app) => {
     res.status(resposta.status).send(resposta.dados);
   });
 
-
-  app.get("/filiais/id/:id", async (req, res) => {
-    const resposta = await filiaisDAO.mostrarUm(req.params.id);
-    res.status(resposta.status).send(resposta.dados);
-  });
-
-  app.get("/filiais/:parametroUm/:parametroDois", async (req, res) => {
-    const resposta = await filiaisDAO.mostrarUm(req.params.parametroUm, req.params.parametroDois);
-    res.status(resposta.status).send(resposta.dados);
-  });
-
-
   app.post("/filiais", async (req, res) => {
     try{
     const modelado = filiaisModel.modelar(req.body)
@@ -30,17 +18,29 @@ const filiaisController = (app) => {
     }
   });
 
+  // td feito (dao, controller)
+  app.get("/filiais/:atributo/:valor", async (req, res) => {
+    const resposta = await filiaisDAO.mostrarUm(req.params.atributo, req.params.valor);
+    res.status(resposta.status).send(resposta.dados);
+  });
 
-  app.delete("/filiais/id/:id", async (req, res) => {
-    const resposta = await filiaisDAO.deletar(req.params.id)
+// td feito
+  app.delete("/filiais/:atributo/:valor", async(req, res) => {
+    const resposta = await filiaisDAO.deletar(req.params.atributo, req.params.valor)
     res.status(resposta.status).send(resposta.dados)
   });
 
-
-  app.put("/filiais/id/:id", async (req, res) => {
-    const resposta = await filiaisDAO.atualizar(req.params.id, req.body)
-    res.status(resposta.status).send(resposta.dados)
+  app.put("/filiais/:atributo/:valor", async (req, res) => {
+    try {
+      const modelado = filiaisModel.modelar(req.body)
+      const resposta = await filiaisDAO.atualizar(req.params.atributo, req.params.valor, modelado)
+      res.status(resposta.status).send(resposta.dados);
+    } catch (error) {
+      res.status(error.status).send(error.dados);
+      console.log(error.dados)
+    }
   });
+
 };
 
 export default filiaisController;

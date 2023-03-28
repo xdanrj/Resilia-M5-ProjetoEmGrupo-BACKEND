@@ -8,8 +8,8 @@ class fornecedoresDAO {
       status: 200,
     };
   }
-  static async mostrarUm(param) {
-    const dadosbd = await database.query(`SELECT * FROM fornecedores WHERE id = ?`, param);
+  static async mostrarUm(atributo, valor) {
+    const dadosbd = await database.query(`SELECT * FROM fornecedores WHERE ${atributo} = ?`, valor);
     return {
       dados: { msg: dadosbd },
       status: 200,
@@ -30,27 +30,29 @@ class fornecedoresDAO {
     };
   }
 
-  static async atualizar(id, obj) {
+  static async atualizar(atributo, valor, obj) {
     try {
-      await database.query("UPDATE fornecedores SET id = ?, nome = ?, endereco = ?, produto = ?, cnpj = ? WHERE id = ?", [
-        obj.id,
+      await database.query(`UPDATE fornecedores SET nome = ?, endereco = ?, produto = ?, cnpj = ? WHERE ${atributo} = ?`, [
         obj.nome,
         obj.endereco,
         obj.produto,
         obj.cnpj,
-        id,
+        valor
       ]);
+      return {
+        dados: {
+          msg: `Fornecedor atualizado com sucesso na tabela Fornecedores pelo atributo ${atributo}`,
+        },
+        status: 200,
+      };
     } catch (error) {
       return {
         dados: { msg: "MySql error", error: error.code },
         status: 500,
       };
     }
-    return {
-      dados: { msg: "Fornecedor atualizado com sucesso na tabela Fornecedores" },
-      status: 200,
-    };
   }
+  
   static async deletar(id) {
     try {
       await database.query("DELETE FROM fornecedores WHERE id = ?", [id]);

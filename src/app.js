@@ -18,6 +18,8 @@ app.use(cors())
       res.status(200).send({msg: "Api sendo acessada remotamente"});
     });
 
+
+
 clientesController(app)
 filiaisController(app)
 fornecedoresController(app)

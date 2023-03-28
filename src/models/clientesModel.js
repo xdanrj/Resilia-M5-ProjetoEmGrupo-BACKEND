@@ -11,7 +11,9 @@ const clientesModel = {
     return {
       id: obj.id,
       nome: obj.nome,
-      email: obj.email
+      email: obj.email,
+      cpf: obj.cpf,
+      cep: obj.cep
     };
   },
  

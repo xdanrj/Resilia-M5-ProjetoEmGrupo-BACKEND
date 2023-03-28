@@ -31,30 +31,55 @@ class vendedoresDAO {
     };
   }
 
-  static async atualizar(id, obj) {
+  static async atualizar(atributo, valor, obj) {
     try {
-      await database.query("UPDATE vendedores SET id = ?, nome = ?, email = ?, cpf = ?, meta = ? WHERE id = ?", [
-      obj.id,
-      obj.nome, 
+      await database.query(`UPDATE vendedores SET id = ?, nome = ?, email = ?, cpf = ?, meta = ? WHERE ${atributo} = ?`, 
+      [obj.id,
+      obj.nome,
       obj.email,
       obj.cpf,
       obj.meta,
-      id,
-      ]);
+      valor
+    ]);
+
+      return {
+        dados: { msg: "Vendedor atualizado com sucesso na tabela Vendedores" },
+        status: 200,
+      };
     } catch (error) {
       return {
         dados: { msg: "MySql error", error: error.code },
         status: 500,
       };
     }
-    return {
-      dados: { msg: "Vendedor atualizado com sucesso na tabela Vendedores" },
-      status: 200,
-    };
   }
-  static async deletar(id) {
+/* FUNCIONANDO \/ (APENAS ID)
+  static async atualizar(id, obj) {
     try {
-      await database.query("DELETE FROM vendedores WHERE id = ?", [id]);
+      await database.query(`UPDATE vendedores SET id = ?, nome = ?, email = ?, cpf = ?, meta = ? WHERE id = ?`,[obj.id,
+      obj.nome,
+      obj.email,
+      obj.cpf,
+      obj.meta,
+      id]);
+
+      return {
+        dados: { msg: "Vendedor atualizado com sucesso na tabela Vendedores" },
+        status: 200,
+      };
+    } catch (error) {
+      return {
+        dados: { msg: "MySql error", error: error.code },
+        status: 500,
+      };
+    }
+  }*/
+
+
+  
+  static async deletar(atributo, valor) {
+    try {
+      await database.query(`DELETE FROM vendedores WHERE ${atributo} = ?`, valor);
     } catch (error) {
       return {
         dados: { msg: "MySql error", error: error.code },

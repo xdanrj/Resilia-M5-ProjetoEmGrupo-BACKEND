@@ -8,8 +8,8 @@ class filiaisDAO {
       status: 200,
     };
   }
-  static async mostrarUm(parametroUm, parametroDois) {
-    const dadosbd = await database.query(`SELECT * FROM filiais WHERE ${parametroUm} = ${parametroDois}`, parametroUm, parametroDois);
+  static async mostrarUm(atributo, valor) {
+    const dadosbd = await database.query(`SELECT * FROM filiais WHERE ${atributo} = ?`, valor);
     return {
       dados: { msg: dadosbd },
       status: 200,
@@ -30,14 +30,14 @@ class filiaisDAO {
     };
   }
 
-  static async atualizar(id, obj) {
+  static async atualizar(atributo, valor, obj) {
     try {
-      await database.query("UPDATE filiais SET id = ?, nome = ?, local = ?, cnpj = ? WHERE id = ?", [
+      await database.query(`UPDATE filiais SET id = ?, nome = ?, local = ?, cnpj = ? WHERE ${atributo} = ?`, [
         obj.id,
         obj.nome,
         obj.local,
         obj.cnpj,
-        id,
+        valor
       ]);
     } catch (error) {
       return {

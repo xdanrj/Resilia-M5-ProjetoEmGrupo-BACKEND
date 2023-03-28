@@ -18,7 +18,7 @@ database.connection.query(
 
 database.connection.query(
   
-     "INSERT INTO filiais (id, nome, local, cnpj) VALUES ( 1, 'nometeste', 'localteste', 'cnpjteste' ); INSERT INTO vendedores (id, nome, email, cpf, meta) VALUES (1, 'nomeTeste', 'teste@gmail.com', 'cpfteste', 10000); INSERT INTO fornecedores (id, nome, endereco, produto, cnpj) VALUES (1, 'fulana de tal', 'rua tal', 'produto tal', '12.456.123/0001-00')",
+     "INSERT INTO filiais (id, nome, local, cnpj) VALUES ( 1, 'nometeste', 'localteste', '12.321.123/0001-12' ); INSERT INTO vendedores (id, nome, email, cpf, meta) VALUES (1, 'nomeTeste', 'teste@gmail.com', '123.456.789-55', 10000); INSERT INTO fornecedores (id, nome, endereco, produto, cnpj) VALUES (1, 'fulanaTal', 'ruaTal', 'produtoTal', '12.456.123/0001-00')",
     function (error, results, fields) {
       if (error) {
         console.log(error);
