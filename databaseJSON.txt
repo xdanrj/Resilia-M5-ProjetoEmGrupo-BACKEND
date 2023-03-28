@@ -109,3 +109,39 @@ PRODUTOS:
     "cor": "Branco",
     "preco": 1530
 }
+
+FORNECEDORES:
+        {
+            "
+        {
+            "id": 1,
+            "nome": "Atacadista Eletronico",
+            "endereco": "Rua Mário Quintana, número 18, Ouro preto, Minas Gerais,",
+            "cnpj": 11223344556745
+        },
+        {
+            "id": 2,
+            "nome": "Fábrica Techy",
+            "endereco": "Rua Uruguaiana, número 969, Centro, Rio de Janeiro, RJ",
+            "cnpj": 11223344556887
+        },
+        {
+            "id": 3,
+            "nome": "Mirante games",
+            "endereco": "Avenida Nossa senhora de Copacabana, número 68, Copacabana, Rio de Janeiro, RJ",
+            "cnpj": 11223344556954
+        },
+        {
+            "id": 4,
+            "nome": "T. Eletron",
+            "endereco": "Rua 25 de março, número 12, centro, São Paulo, SP",
+            "cnpj": 11223344556032
+        },
+        {
+            "id": 5,
+            "nome": "Start T.",
+            "endereco": "Avenida Principal, número 630, Tres Figueiras, Porto Alegre, RS",
+            "cnpj": 11223344556509
+        }
+ 
+ 
