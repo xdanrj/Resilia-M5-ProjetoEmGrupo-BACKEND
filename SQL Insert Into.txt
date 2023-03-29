@@ -16,3 +16,9 @@ INSERT INTO vendedores(id,nome,email,cpf,meta) VALUES (3,'Pedro Souza','pedrosou
 INSERT INTO vendedores(id,nome,email,cpf,meta) VALUES (4,'Caroline Santos','carolinesantos@ztech.com','369.214.780-21',20000);
 INSERT INTO vendedores(id,nome,email,cpf,meta) VALUES (5,'Patricia Lemos','patricialemos@ztech.com','789.012.697-40',47000);
 INSERT INTO vendedores(id,nome,email,cpf,meta) VALUES (6,'Yuri Rocha','yurirocha@ztech.com','154.012.378-95',3000);
+
+INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (1,'Atacadista Eletrônico','Rua Mário Quintana, n 18, Ouro Preto, Minas Gerais, MG','15.223.344/5567-45');
+INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (2,'Fábrica Tech','Rua Uruguaiana n 969, Centro, Rio de Janeiro, RJ','44.223.387/6568-87');
+INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (3,'Mirante Games','Avenida Nossa Senhora de Copacabana, n 68, Copacabana, Rio de Janeiro, RJ','21.223.788/3569-54');
+INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (4,'T. Eletron','Rua 25 de Março, n 12, Centro, São Paulo, SP','31.256.341/1560-52');
+INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (5,'Start T.','Avenida Principal, n 630, Três Figueiras, Porto Alegre, RS','11.623.374/4565-09');
