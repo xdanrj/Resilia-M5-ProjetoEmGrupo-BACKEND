@@ -10,3 +10,10 @@ CREATE TABLE filiais(
   ,local VARCHAR(90) NOT NULL
   ,cnpj  VARCHAR(30) NOT NULL
 );
+CREATE TABLE vendedores(
+   id    INT  NOT NULL PRIMARY KEY AUTO_INCREMENT
+  ,nome  VARCHAR(45) NOT NULL
+  ,email VARCHAR(30) NOT NULL
+  ,cpf   VARCHAR(14) NOT NULL
+  ,meta  INT NOT NULL
+);
