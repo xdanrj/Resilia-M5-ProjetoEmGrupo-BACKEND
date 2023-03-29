@@ -1,4 +1,4 @@
-# Resilia - Projeto em grupo do módulo 5 
+# Resilia - Projeto em grupo do Módulo 5 
 
 
 💻 Tecnologias e ferramentas usadas no projeto:
