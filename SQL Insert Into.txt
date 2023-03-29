@@ -3,3 +3,9 @@ INSERT INTO produtos(id,nome,cor,preco) VALUES (2,'JBL Go 3','Preto',240);
 INSERT INTO produtos(id,nome,cor,preco) VALUES (3,'Philco Fone','Azul',95);
 INSERT INTO produtos(id,nome,cor,preco) VALUES (4,'Canon Camera','Preto',968);
 INSERT INTO produtos(id,nome,cor,preco) VALUES (5,'Xbox Videogame','Branco',1530);
+
+INSERT INTO filiais(id,nome,local,cnpj) VALUES (1,'Z Tech RJ','Rua São José, Centro, n 32, Rio de Janeiro, RJ','22.312.432/0005-47');
+INSERT INTO filiais(id,nome,local,cnpj) VALUES (2,'Z Tech SP','Rua Conde de Sarzedas, n 134, Liberdade, São Paulo, SP','13.435.654/0002-33');
+INSERT INTO filiais(id,nome,local,cnpj) VALUES (3,'Z Tech MG','Rua Dr. Plínio de Morais, n 542, Cidade Nova, Belo Horizonte, MG','43.887.674/0003-12');
+INSERT INTO filiais(id,nome,local,cnpj) VALUES (4,'Z Tech RS','Rua Prof. Sarmento Barata, n 277, Navegantes, Porto Alegre, RS','76.721.113/0001-83');
+INSERT INTO filiais(id,nome,local,cnpj) VALUES (5,'Z Tech DF','Asa Sul Superquadra Sul n 215 BL K, Asa Sul, Brasília, DF','12.552.324/0009-51');
