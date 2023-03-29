@@ -19,7 +19,7 @@ CREATE TABLE vendedores(
 );
 
 CREATE TABLE Fornecedores(
-   id       INTEGER  NOT NULL PRIMARY KEY 
+   id       INT  NOT NULL PRIMARY KEY AUTO_INCREMENT
   ,nome     VARCHAR(60) NOT NULL
   ,endereco VARCHAR(250) NOT NULL
   ,cnpj     VARCHAR(18) NOT NULL
