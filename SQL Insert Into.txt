@@ -1,0 +1,5 @@
+INSERT INTO produtos(id,nome,cor,preco) VALUES (1,'Samsung Galaxy A34','Violeta',2317);
+INSERT INTO produtos(id,nome,cor,preco) VALUES (2,'JBL Go 3','Preto',240);
+INSERT INTO produtos(id,nome,cor,preco) VALUES (3,'Philco Fone','Azul',95);
+INSERT INTO produtos(id,nome,cor,preco) VALUES (4,'Canon Camera','Preto',968);
+INSERT INTO produtos(id,nome,cor,preco) VALUES (5,'Xbox Videogame','Branco',1530);
