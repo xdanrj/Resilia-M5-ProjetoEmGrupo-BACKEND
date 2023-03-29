@@ -78,34 +78,39 @@ VENDEDORES: {
 PRODUTOS: {
     "id": 1,
         "nome": "Samsung Galaxy A34",
-            "cor": "Violeta",
-                "preco": 2317
+            "cor": "Azul",
+                "preco": 2317,
+                img: "https://images.samsung.com/is/image/samsung/p6pim/br/sm-a346mzkazto/gallery/br-galaxy-a34-5g-sm-a346-sm-a346mzkazto-thumb-535811088?$240_240_PNG$"
 },
 {
     "id": 2,
         "nome": "JBL Go 3",
-            "cor": "Preto",
-                "preco": 240
+            "cor": "Rosa",
+                "preco": 240,
+                img: "https://www.jbl.com.br/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw61b5bf85/JBL_GO_3_HERO_BLACK_0079.png?sw=537&sfrm=png"
 },
 {
     "id": 3,
         "nome": "Philco Fone",
-            "cor": "Azul",
-                "preco": 95
+            "cor": "Rosa",
+                "preco": 95,
+                img: "https://philco.vteximg.com.br/arquivos/ids/236068-1000-1000/PFO06BTRG-01.jpg?v=638047388092570000"
 },
 {
     "id": 4,
         "nome": "Canon Camera",
             "cor": "Preto",
-                "preco": 968
+                "preco": 968,
+                img: "https://www.canon.com.br/static/landings/cameras/EOS-REBEL-T7-Plus/files/img/frontend/product/slider/05_thumb.jpg"
 },
 {
     "id": 5,
         "nome": "Xbox Videogame",
             "cor": "Branco",
-                "preco": 1530
+                "preco": 1530,
+                img: "https://pngimg.com/uploads/xbox/xbox_PNG101375.png"
 }
-
+ 
 
 CLIENTES: {
     "id": 1,
