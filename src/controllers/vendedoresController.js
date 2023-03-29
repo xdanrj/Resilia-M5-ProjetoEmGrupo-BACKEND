@@ -30,20 +30,7 @@ const vendedoresController = (app) => {
     res.status(resposta.status).send(resposta.dados)
   });
 
-/* funcionando apenas id \/ 
-app.put("/vendedores/id/:id", async (req, res) => {
-  try {
-    const modelado = vendedoresModel.modelar(req.body)
-    const resposta = await vendedoresDAO.atualizar(req.params.id, modelado)
-    res.status(resposta.status).send(resposta.dados);
-  } catch (error) {
-    res.status(error.status).send(error.dados);
-    console.log(error.dados)
-  }
-});
-*/
   
-
 app.put("/vendedores/:atributo/:valor", async (req, res) => {
   try {
     const modelado = vendedoresModel.modelar(req.body)

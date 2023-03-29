@@ -53,9 +53,9 @@ class fornecedoresDAO {
     }
   }
   
-  static async deletar(id) {
+  static async deletar(atributo, valor) {
     try {
-      await database.query("DELETE FROM fornecedores WHERE id = ?", [id]);
+      await database.query(`DELETE FROM fornecedores WHERE ${atributo} = ?`, valor);
     } catch (error) {
       return {
         dados: { msg: "MySql error", error: error.code },

@@ -1,4 +1,5 @@
-FILIAIS: {
+[
+{
     "id": 1,
         "nome": "Z Tech RJ",
             "local": "Rua São José, Centro, n 32, Rio de Janeiro, RJ",
@@ -28,7 +29,7 @@ FILIAIS: {
             "local": "Asa Sul Superquadra Sul n 215 BL K, Asa Sul, Brasília, DF",
                 "cnpj": "12.552.324/0009-51"
 }
-
+]
 
 VENDEDORES: {
     "id": 1,

@@ -50,9 +50,9 @@ class produtosDAO {
       status: 200,
     };
   }
-  static async deletar(id) {
+  static async deletar(atributo, valor) {
     try {
-      await database.query("DELETE FROM produtos WHERE id = ?", [id]);
+      await database.query(`DELETE FROM produtos WHERE ${atributo} = ?`, valor);
     } catch (error) {
       return {
         dados: { msg: "MySql error", error: error.code },
