@@ -25,7 +25,7 @@ class produtosDAO {
       };
     }
     return {
-      dados: { msg: "Produto inserido com sucesso na tabela Produtos" },
+      dados: { msg: `Produto atualizado com sucesso usando o atributo "${atributo}"` },
       status: 201,
     };
   }
@@ -46,7 +46,7 @@ class produtosDAO {
       };
     }
     return {
-      dados: { msg: "Produto atualizado com sucesso na tabela Produtos" },
+      dados: { msg: `Produto atualizado com sucesso pelo atributo "${atributo}"` },
       status: 200,
     };
   }
@@ -60,7 +60,7 @@ class produtosDAO {
       };
     }
     return {
-      dados: { msg: "Produto excluido com sucesso da tabela Produtos" },
+      dados: { msg: `Produto exluido com sucesso usando o atributo "${atributo}"` },
       status: 200,
     };
   }

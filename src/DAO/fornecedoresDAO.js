@@ -25,7 +25,7 @@ class fornecedoresDAO {
       };
     }
     return {
-      dados: { msg: "Fornecedor inserido com sucesso na tabela Fornecedores" },
+      dados: { msg: `Fornecedor atualizado com sucesso usando o atributo "${atributo}"` },
       status: 201,
     };
   }
@@ -41,7 +41,7 @@ class fornecedoresDAO {
       ]);
       return {
         dados: {
-          msg: `Fornecedor atualizado com sucesso na tabela Fornecedores pelo atributo ${atributo}`,
+          msg: `Fornecedor atualizado com sucesso pelo atributo "${atributo}"`,
         },
         status: 200,
       };
@@ -63,7 +63,7 @@ class fornecedoresDAO {
       };
     }
     return {
-      dados: { msg: "Fornecedor excluido com sucesso da tabela Fornecedores" },
+      dados: { msg: `Fornecedor exluido com sucesso usando o atributo "${atributo}"` },
       status: 200,
     };
   }

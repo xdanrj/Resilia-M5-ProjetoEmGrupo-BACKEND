@@ -47,7 +47,7 @@ class clientesDAO {
       };
     }
     return {
-      dados: { msg: "Cliente atualizado com sucesso na tabela Clientes" },
+      dados: { msg: `Cliente atualizado com sucesso usando o atributo "${atributo}"` },
       status: 200,
     };
   }
@@ -61,7 +61,7 @@ class clientesDAO {
       };
     }
     return {
-      dados: { msg: "Cliente excluido com sucesso da tabela Clientes" },
+      dados: { msg: `Cliente exluido com sucesso usando o atributo "${atributo}"` },
       status: 200,
     };
   }

@@ -41,9 +41,8 @@ class vendedoresDAO {
       obj.meta,
       valor
     ]);
-
       return {
-        dados: { msg: "Vendedor atualizado com sucesso na tabela Vendedores" },
+        dados: { msg: `Vendedor atualizado com sucesso pelo atributo "${atributo}"`},
         status: 200,
       };
     } catch (error) {
@@ -53,28 +52,6 @@ class vendedoresDAO {
       };
     }
   }
-/* FUNCIONANDO \/ (APENAS ID)
-  static async atualizar(id, obj) {
-    try {
-      await database.query(`UPDATE vendedores SET id = ?, nome = ?, email = ?, cpf = ?, meta = ? WHERE id = ?`,[obj.id,
-      obj.nome,
-      obj.email,
-      obj.cpf,
-      obj.meta,
-      id]);
-
-      return {
-        dados: { msg: "Vendedor atualizado com sucesso na tabela Vendedores" },
-        status: 200,
-      };
-    } catch (error) {
-      return {
-        dados: { msg: "MySql error", error: error.code },
-        status: 500,
-      };
-    }
-  }*/
-
 
   
   static async deletar(atributo, valor) {
@@ -87,7 +64,7 @@ class vendedoresDAO {
       };
     }
     return {
-      dados: { msg: "Vendedor excluido com sucesso da tabela Vendedores" },
+      dados: { msg: `Vendedor exluido com sucesso usando o atributo "${atributo}"` },
       status: 200,
     };
   }

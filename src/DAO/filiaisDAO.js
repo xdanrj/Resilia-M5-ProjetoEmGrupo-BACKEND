@@ -46,7 +46,7 @@ class filiaisDAO {
       };
     }
     return {
-      dados: { msg: "Filial atualizado com sucesso na tabela Filiais" },
+      dados: { msg: `Filial atualizado com sucesso usando o atributo "${atributo}"` },
       status: 200,
     };
   }
@@ -60,7 +60,7 @@ class filiaisDAO {
       };
     }
     return {
-      dados: { msg: "Filial excluido com sucesso da tabela Filiais" },
+      dados: { msg: `Filial exluido com sucesso usando o atributo "${atributo}"` },
       status: 200,
     };
   }
