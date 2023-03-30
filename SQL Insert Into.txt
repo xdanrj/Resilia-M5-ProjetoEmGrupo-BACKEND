@@ -22,3 +22,10 @@ INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (2,'Fábrica Tech','Rua U
 INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (3,'Mirante Games','Avenida Nossa Senhora de Copacabana, n 68, Copacabana, Rio de Janeiro, RJ','21.223.788/3569-54');
 INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (4,'T. Eletron','Rua 25 de Março, n 12, Centro, São Paulo, SP','31.256.341/1560-52');
 INSERT INTO Fornecedores(id,nome,endereco,cnpj) VALUES (5,'Start T.','Avenida Principal, n 630, Três Figueiras, Porto Alegre, RS','11.623.374/4565-09');
+
+INSERT INTO clientes(id,nome,email,cpf,cep) VALUES (1,'Pedro Andrade Mariano','andrade@yahoo.com','196.164.129-96','23842-283');
+INSERT INTO clientes(id,nome,email,cpf,cep) VALUES (2,'Maylah Fonseca da Silva','maylah@gmail.com','183.182.173-45','28137-282');
+INSERT INTO clientes(id,nome,email,cpf,cep) VALUES (3,'Myllany Hollanda Pereira','hollanda.rj@gmail.com','124.183.186-69','28429-293');
+INSERT INTO clientes(id,nome,email,cpf,cep) VALUES (4,'Michel Castanheira pinto','castanha@gmail.com','134.134.142-70','18328-382');
+INSERT INTO clientes(id,nome,email,cpf,cep) VALUES (5,'Hugo dos Santos Alves','hugu@gmail.com','189.148.197-95','48218-293');
+INSERT INTO clientes(id,nome,email,cpf,cep) VALUES (6,'Hevelyn Costa Golfinho','hevelynrow@gmail.com','189.138.196-95','49229-392');
