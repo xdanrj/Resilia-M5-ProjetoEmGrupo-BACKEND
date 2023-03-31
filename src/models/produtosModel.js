@@ -4,7 +4,8 @@ const produtosModel = {
       id: obj.id,
       nome: obj.nome,
       cor: obj.cor,
-      preco: obj.preco
+      preco: obj.preco,
+      img: obj.img
     };
     
   },

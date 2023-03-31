@@ -17,7 +17,7 @@ class produtosDAO {
   }
   static async inserir(obj) {
     try {
-      await database.query("INSERT INTO produtos (id, nome, cor, preco) VALUES (?,?,?,?)", Object.values(obj));
+      await database.query("INSERT INTO produtos (id, nome, cor, preco, img) VALUES (?,?,?,?,?)", Object.values(obj));
     } catch (error) {
       return {
         dados: { msg: "MySql error", error: error.code },
@@ -25,18 +25,19 @@ class produtosDAO {
       };
     }
     return {
-      dados: { msg: `Produto atualizado com sucesso usando o atributo "${atributo}"` },
+      dados: { msg: `Produto atualizado com sucesso` },
       status: 201,
     };
   }
 
   static async atualizar(atributo, valor, obj) {
     try {
-      await database.query(`UPDATE produtos SET id = ?, nome = ?, cor = ?, preco = ? WHERE ${atributo} = ?`, [
+      await database.query(`UPDATE produtos SET id = ?, nome = ?, cor = ?, preco = ?, img = ? WHERE ${atributo} = ?`, [
         obj.id,
         obj.nome,
         obj.cor,
         obj.preco,
+        obj.img,
         valor
       ]);
     } catch (error) {
