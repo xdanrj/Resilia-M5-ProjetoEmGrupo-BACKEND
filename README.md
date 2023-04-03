@@ -1,10 +1,33 @@
-# Resilia - Projeto em grupo do Módulo 5 
 
 
-💻 Tecnologias e ferramentas usadas no projeto:
+# ZTECH - Projeto final do módulo 5 (tecnologias server side)
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="40" height="40"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/>
+Nosso projeto tem como objetivo criar uma API e consumir essa API no backend,
+
+
+
+Execute o projeto seguindo os passos abaixo: 
+
+Abra um terminal, e dentro da pasta do projeto e execute o comando:
+
+
+Execute o backend. 
+
+$ npm start
+
+
+
+Ferramentas e linguagens utilizadas no projeto:
+
+• VS code 
+
+• MySql 
+
+• Node.js 
+
+• React
+
+• Javascript  
+
+
 
